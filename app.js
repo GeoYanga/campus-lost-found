@@ -1,6 +1,6 @@
 "use strict";
 
-// Load items from LocalStorage
+// LocalStorage CRUD logic for storing lost and found items
 let items = JSON.parse(localStorage.getItem("items")) || [];
 
 function saveItems() {
