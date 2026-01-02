@@ -44,6 +44,8 @@ function renderItems() {
   updateStats();
 }
 
+// Search and user interaction enhancements
+
 function searchItems() {
   const input = document.getElementById("searchInput").value.toLowerCase();
   const table = document.getElementById("itemTable");
