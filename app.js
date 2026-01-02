@@ -7,7 +7,7 @@ function saveItems() {
   localStorage.setItem("items", JSON.stringify(items));
 }
 
-// Update dashboard stats
+// Dashboard rendering and statistics update
 function updateStats() {
   const total = document.getElementById("totalCount");
   const lost = document.getElementById("lostCount");
