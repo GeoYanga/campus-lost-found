@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h2>CampusSys</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li><a href="report.html">Report Item</a></li>
+    </ul>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <h3>Lost & Found Dashboard</h3>
+    </header>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h4>Total Reports</h4>
+        <p id="totalCount">0</p>
+      </div>
+      <div class="stat-card">
+        <h4>Lost Items</h4>
+        <p id="lostCount">0</p>
+      </div>
+      <div class="stat-card">
+        <h4>Found Items</h4>
+        <p id="foundCount">0</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <!-- Search Bar -->
+      <input type="text" id="searchInput" placeholder="Search items..." onkeyup="searchItems()" style="padding:10px; width:100%; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;">
+
+      <!-- Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="itemTable"></tbody>
+      </table>
+    </section>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
